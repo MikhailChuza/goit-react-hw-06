@@ -1,24 +1,32 @@
-.contacts {
-  width: 350px;
-  border: 1px solid black;
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  overflow-wrap: break-word;
+  gap: 8px;
+}
+
+.deleteBtn {
   border-radius: 4px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 50px;
-  padding: 10px 3px;
+  height: 25px;
+  background-color: rgb(71, 139, 195);
+  color: rgb(255, 255, 255);
+  margin-top: 8px;
+  width: 150px;
+  border: 1px solid #0c311e;
 }
 
-.name {
-  margin-left: 8px;
+.deleteBtn:hover {
+  background-color: rgb(32, 28, 100);
+  color: rgb(255, 255, 255);
 }
 
-.btn {
-  padding: 6px 10px;
-}
-
-.icon {
-  display: flex;
-  margin-bottom: 4px;
-  align-items: center;
+.contactName {
+  text-overflow: ellipsis;
+  max-width: 150px;
+  overflow: hidden;
 }

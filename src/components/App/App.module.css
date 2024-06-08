@@ -1,3 +1,12 @@
-.app {
-  padding: 50px;
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  justify-content: center;
+}
+
+.mainTitle {
+  color: rgb(71, 139, 195);
+  margin-bottom: 25px;
 }
